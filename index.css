@@ -1,84 +1,114 @@
-.content{
-    width: 300px;
-    height: 530px;
-    border: 3px solid #778899;
+.cont1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #00D2FF;
+    border: 1px solid #00D2FF;
+    /*width: 1350px;*/
+    margin: 0px;
+    height: 40;
+    color: #ffff;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body{
+    background-color: #ffff;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.cont2{
+   display: flex;
+   justify-content: space-between;
+   align-items: baseline;
+   border: 2px solid #fff;
+   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.textgrey{
+    color: grey;
+}
+
+.btn{
+    background-color: #FF0000;
+    color: white;
+    border-radius: 3px;
+    height: 50px;
+    font-size: 15px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    width: 200px;
+    border-color: #FF0000;
+    box-shadow: none;
+    transition: 1s;
+}
+
+.btn:hover{
+    border-top-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+}
+
+.cont3{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;  
+   border: 2px solid #ffff;
+   height: 500px;
+}
+
+
+.cont4{
+    border: 2px solid #fff;
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline; 
+    width: 1000px;
+    margin: 75px;
+}
+
+
+.cont5{
+    border: 2px solid #fff;
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline; 
+    width: 1000px;
+    margin: 75px;
+}
+
+.contg{
+    border: 3px solid #9dd5e2;
+    width: 450px;
+    height: 300px;
     border-radius: 10px;
-    background-color: #778899;
 }
 
-h1{
-    color: #FFFFFF;
-    font-size: 20px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    text-align: left;
+.cg{
+   text-align: center;
 }
 
-h2{
-  color: #FFFFFF;
-  font-size: 18px;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  text-align: left; 
+/* Базовые стили (обычно пишутся под мобильные первыми — Mobile First, или под десктоп) */
+.container {
+  display: flex;
+  flex-direction: row; /* На больших экранах элементы в ряд */
 }
 
-p{
- color: #FFFFFF;
-  font-size: 14px;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  text-align: left; 
-} 
-.ter{
+.sidebar {
   width: 300px;
-  height: 530;
-  border: 3px solid #778899;
-  border-radius: 10px;
-  background-color: #778899;
-}  
-
-h1{
-    color: #FFFFFF;
-    font-size: 20px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    text-align: left;
 }
 
-h2{
-  color: #FFFFFF;
-  font-size: 18px;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  text-align: left; 
+/* Планшеты и меньше (ширина экрана до 1024px) */
+@media screen and (max-width: 1024px) {
+  .sidebar {
+    width: 200px;
+  }
 }
 
-p{
- color: #FFFFFF;
-  font-size: 14px;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  text-align: left; 
-} 
-.ter3{
-  width: 300px;
-  height: 530;
-  border: 3px solid #778899;
-  border-radius: 10px;
-  background-color: #778899;
+/* Мобильные устройства (ширина экрана до 768px) */
+@media screen and (max-width: 768px) {
+  .container {
+    flex-direction: column; /* Элементы выстраиваются в колонку друг под другом */
+  }
+  
+  .sidebar {
+    width: 100%;
+  }
 }
-
-h1{
-    color: #FFFFFF;
-    font-size: 20px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    text-align: left;
-}
-
-h2{
-  color: #FFFFFF;
-  font-size: 18px;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  text-align: left; 
-}
-
-p{
- color: #FFFFFF;
-  font-size: 14px;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  text-align: left; 
-} 
